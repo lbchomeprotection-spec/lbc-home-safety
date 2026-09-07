@@ -1,0 +1,98 @@
+# Netlify Configuration for LBC Home Safety Website
+
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Custom redirects and clean URL routing
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/services"
+  to = "/services.html"
+  status = 200
+
+[[redirects]]
+  from = "/service-areas"
+  to = "/service-areas.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/invisible-grill-installation"
+  to = "/services/invisible-grill-installation.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/bird-net-installation"
+  to = "/services/bird-net-installation.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/safety-net-installation"
+  to = "/services/safety-net-installation.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/sports-net-installation"
+  to = "/services/sports-net-installation.html"
+  status = 200
+
+# Short URL aliases
+[[redirects]]
+  from = "/services/invisible-grill"
+  to = "/services/invisible-grill-installation.html"
+  status = 301
+
+[[redirects]]
+  from = "/services/bird-net"
+  to = "/services/bird-net-installation.html"
+  status = 301
+
+[[redirects]]
+  from = "/services/safety-net"
+  to = "/services/safety-net-installation.html"
+  status = 301
+
+[[redirects]]
+  from = "/services/sports-net"
+  to = "/services/sports-net-installation.html"
+  status = 301
+
+# 404 Fallback
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# Security and Caching Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

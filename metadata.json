@@ -1,0 +1,6 @@
+{
+  "name": "LBC Home Safety",
+  "description": "Professional home safety and protection services including Invisible Grill, Bird Net, Safety Net, and Sports Net installation in Patna, Kolkata, and Bihar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

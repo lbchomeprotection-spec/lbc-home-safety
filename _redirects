@@ -1,0 +1,18 @@
+# Clean URL rules
+/about                                   /about.html                                200
+/services                                /services.html                             200
+/service-areas                           /service-areas.html                        200
+/contact                                 /contact.html                              200
+/services/invisible-grill-installation   /services/invisible-grill-installation.html 200
+/services/bird-net-installation          /services/bird-net-installation.html       200
+/services/safety-net-installation        /services/safety-net-installation.html     200
+/services/sports-net-installation        /services/sports-net-installation.html     200
+
+# Short URL redirects
+/services/invisible-grill                /services/invisible-grill-installation.html 301
+/services/bird-net                       /services/bird-net-installation.html       301
+/services/safety-net                     /services/safety-net-installation.html     301
+/services/sports-net                     /services/sports-net-installation.html     301
+
+# 404 Fallback
+/*                                       /404.html                                  404

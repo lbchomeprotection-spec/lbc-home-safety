@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 480" width="100%" height="100%" role="img" aria-label="LBC Home Safety Logo">
+  <defs>
+    <linearGradient id="lbcGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="lbcBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#087EA4"/>
+      <stop offset="100%" stop-color="#063B5C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Roofline and Chimney -->
+  <path d="M325 90 V55 H365 V125 Z" fill="#063B5C"/>
+  <path d="M250 35 L445 180 H395 L250 72 L105 180 H55 Z" fill="#063B5C"/>
+
+  <!-- Roof Attic Window (4 panes) -->
+  <g fill="#063B5C">
+    <rect x="231" y="112" width="16" height="16" rx="2"/>
+    <rect x="253" y="112" width="16" height="16" rx="2"/>
+    <rect x="231" y="134" width="16" height="16" rx="2"/>
+    <rect x="253" y="134" width="16" height="16" rx="2"/>
+  </g>
+
+  <!-- Green Swoosh Arch -->
+  <path d="M 48 260 C 80 180 170 155 250 170 C 330 185 410 175 450 152 C 430 185 350 215 250 200 C 150 185 85 220 48 260 Z" fill="url(#lbcGreenGrad)"/>
+
+  <!-- Main 'LBC' Typography -->
+  <!-- L -->
+  <path d="M 88 195 H 152 V 292 H 188 V 320 H 88 Z" fill="#063B5C"/>
+  
+  <!-- B -->
+  <path d="M 185 195 H 255 C 290 195 306 210 306 226 C 306 238 298 248 284 254 C 302 260 312 272 312 289 C 312 308 294 320 258 320 H 185 Z M 225 219 V 245 H 250 C 263 245 270 240 270 232 C 270 224 263 219 250 219 Z M 225 268 V 296 H 253 C 268 296 275 290 275 282 C 275 273 268 268 253 268 Z" fill="url(#lbcGreenGrad)"/>
+
+  <!-- C -->
+  <path d="M 405 210 C 390 198 368 192 342 192 C 292 192 258 226 258 268 C 258 310 292 323 342 323 C 370 323 392 316 408 302 L 434 326 C 410 348 378 358 340 358 C 265 358 220 314 220 268 C 220 220 265 158 342 158 C 382 158 414 172 436 192 Z" fill="#063B5C" transform="translate(25, -10) scale(0.92)"/>
+  
+  <!-- Window panes inside C -->
+  <g fill="#063B5C">
+    <rect x="362" y="244" width="15" height="15" rx="1.5"/>
+    <rect x="381" y="244" width="15" height="15" rx="1.5"/>
+    <rect x="362" y="263" width="15" height="15" rx="1.5"/>
+    <rect x="381" y="263" width="15" height="15" rx="1.5"/>
+  </g>
+
+  <!-- HOME SAFETY text -->
+  <text x="35" y="375" font-family="'Poppins', 'Arial Black', sans-serif" font-weight="900" font-size="46" letter-spacing="2" fill="#063B5C">HOME</text>
+  <text x="238" y="375" font-family="'Poppins', 'Arial Black', sans-serif" font-weight="900" font-size="46" letter-spacing="2" fill="#19A974">SAFETY</text>
+
+  <!-- Tagline: "Your Home  Our Protection" with orange accent lines -->
+  <line x1="35" y1="400" x2="72" y2="400" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <text x="90" y="405" font-family="'Poppins', sans-serif" font-weight="700" font-size="20" fill="#063B5C">Your Home</text>
+  <text x="238" y="405" font-family="'Poppins', sans-serif" font-weight="700" font-size="20" fill="#063B5C">Our Protection</text>
+  <line x1="422" y1="400" x2="465" y2="400" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+</svg>
